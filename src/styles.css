@@ -1,0 +1,74 @@
+/*
+ * Стили компонента App
+ */
+.App {
+}
+
+button {
+  background-image: url(./img/search.svg);
+}
+/*
+ * Стили компонента Searchbar
+ */
+.Searchbar {
+}
+
+/*
+ * Стили компонента SearchForm
+ */
+.SearchForm {
+}
+
+.SearchForm-button {
+}
+
+.SearchForm-button:hover {
+}
+
+.SearchForm-button-label {
+}
+
+.SearchForm-input {
+}
+
+.SearchForm-input::placeholder {
+}
+
+/*
+ * Стили компонента ImageGallery
+ */
+.ImageGallery {
+}
+
+/*
+ * Стили компонента ImageGalleryItem
+ */
+.ImageGalleryItem {
+}
+
+.ImageGalleryItem-image {
+}
+
+.ImageGalleryItem-image:hover {
+}
+
+/*
+ * Стили компонента Modal
+ */
+
+.Overlay {
+}
+
+.Modal {
+  background-image: url('../src/img/search.svg');
+}
+
+/*
+* Стили компонента Buton (Load more)
+*/
+.Button {
+}
+
+.Button:hover,
+.Button:focus {
+}
