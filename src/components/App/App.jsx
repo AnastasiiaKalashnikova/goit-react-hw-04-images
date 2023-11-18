@@ -35,9 +35,8 @@ export const App = () => {
           console.log(foundImgs.hits);
           setImages(prevState => [...prevState, ...foundImgs.hits]);
           setTotalHits(foundImgs.totalHits);
-        } catch (mistake) {
+        } catch (error) {
           setError(true);
-          console.log(error);
 
           return toast.error('Something went wrong... Try again!');
         } finally {
@@ -47,7 +46,7 @@ export const App = () => {
 
       getImages();
     }
-  }, [inputValue, page]);
+  }, [inputValue, page, error]);
 
   return (
     <Wrapper>
