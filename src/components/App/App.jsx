@@ -35,6 +35,9 @@ export const App = () => {
           console.log(foundImgs.hits);
           setImages(prevState => [...prevState, ...foundImgs.hits]);
           setTotalHits(foundImgs.totalHits);
+          if (foundImgs.hits.length === 0) {
+            return toast.error('Something went wrong... Try again!');
+          }
         } catch (error) {
           setError(true);
 
