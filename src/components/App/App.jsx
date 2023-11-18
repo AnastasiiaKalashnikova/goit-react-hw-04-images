@@ -35,8 +35,10 @@ export const App = () => {
           console.log(foundImgs.hits);
           setImages(prevState => [...prevState, ...foundImgs.hits]);
           setTotalHits(foundImgs.totalHits);
-        } catch (error) {
+        } catch (mistake) {
           setError(true);
+          console.log(error);
+
           return toast.error('Something went wrong... Try again!');
         } finally {
           setIsLoading(false);
